@@ -1,0 +1,43 @@
+.home-container {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  /* ...rest of styles */
+
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.generate-link {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.generate-link:hover {
+  color: #00ff99;
+}
+.codecast-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: clamp(1rem, 2vw, 1.15rem); /* Responsive font size */
+  margin-bottom: 0;
+  margin-left: 0; /* Because you used ms-0 */
+}
+
+/* Optional: tweak for smaller devices */
+@media (max-width: 480px) {
+  .codecast-title {
+    font-size: 1rem;
+  }
+}
